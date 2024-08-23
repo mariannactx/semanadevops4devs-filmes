@@ -14,6 +14,7 @@ jobs:
         run: echo "Execução do push da imagem"
   CD:
     runs-on: ubuntu-latest
+    needs: [CI]
     steps:
       - name: Passo 01
         run: echo "Execução do deploy"
